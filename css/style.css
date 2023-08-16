@@ -1,12 +1,24 @@
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    color: #c78a8a;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+*{
+    box-sizing: border-box;
 }
-p {
-    color: red;
+.row{
+    border:solid black 1px;
+    height: 150px;
+    font-size: 0px;
+}
+.row2{
+    border:solid black 2px;
+    height: 50%;
+}
+.col{
+    border:solid black 2px;
+    display: inline-block;
+    height: 100%;
+    width: 33.33%;
+}
+.col2{
+    border:solid black 2px;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
 }
