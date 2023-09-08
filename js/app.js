@@ -1,27 +1,64 @@
 class Box extends React.Component{
+    state={color:'black'}
+    changeColor(color){
+        this.setState({color:color});
+    }
     render(){
         return(
-            <div className="box">
-                <h1 id='abc'>{this.props.heading}</h1>
+            <div className='box'>
+                <h1 className={this.state.color}>{this.props.heading}</h1>
                 <p>GIHDRXLDIFKJSMLCDKFSDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
+                <button onClick={()=>this.changeColor("red")}>Red</button>
+                <button onClick={()=>this.changeColor("yellow")}>Yellow</button>
+                <button onClick={()=>this.changeColor("blue")}>Blue</button>
+                <button onClick={()=>this.changeColor("green")}>Green</button>
             </div>
         );
     }
 };
-const App=() => (
-    <div className='row'>
-        <div className='col'>
-            <Box heading='Heading 1'/>
+class App extends React.Component{
+    state={
+        boxes:[
+            {
+                heading:'first heading',
+                color:'black'
+            },
+            {
+                heading:'second heading',
+                color:'black'
+            },
+            {
+                heading:'third heading',
+                color:'black'
+            },
+            {
+                heading:'fourth heading',
+                color:'black'
+            },
+            {
+                heading:'fifth heading',
+                color:'black'
+            },
+            {
+                heading:'sixth heading',
+                color:'black'
+            },
+            {
+                heading:'seventh heading',
+                color:'black'
+            }
+        ]
+    }
+    render(){
+        return(
+        <div className='row'>
+            {this.state.boxes.map(box =>
+                <div className='col'>
+                    <Box heading={box.heading} color={box.color}/>
+                </div>
+            )}
         </div>
-        <div className='col'>
-            <Box heading='Heading 2'/>
-        </div>
-        <div className='col'>
-            <Box heading='Heading 3'/>
-        </div>
-        <div className='col'>
-            <Box heading='Heading 4'/>
-        </div>
-    </div>
-);
+        );
+    }
+}
 ReactDOM.render(<App />,document.getElementById('react-container'));
