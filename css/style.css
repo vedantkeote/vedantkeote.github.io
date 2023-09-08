@@ -1,24 +1,25 @@
-*{
-    box-sizing: border-box;
-}
 .row{
-    border:solid black 1px;
-    height: 150px;
-    font-size: 0px;
-}
-.row2{
-    border:solid black 2px;
-    height: 50%;
-}
+    display:flex;
+    flex-wrap: wrap;
+};
 .col{
-    border:solid black 2px;
-    display: inline-block;
-    height: 100%;
-    width: 33.33%;
-}
-.col2{
-    border:solid black 2px;
-    display: inline-block;
-    height: 100%;
-    width: 50%;
-}
+    flex-basis: 50%;
+};
+.box{
+    padding: 10px;
+};
+button{
+    margin:8px;
+};
+.red{
+    color: red;
+};
+.yellow{
+    color: yellow;
+};
+.green{
+    color: green;
+};
+.blue{
+    color: blue;
+};
