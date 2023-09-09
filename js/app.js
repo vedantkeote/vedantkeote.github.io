@@ -2,7 +2,9 @@ const Box = props => {
     return(
         <div className='box'>
            <h1 className={props.color}>{props.heading}</h1>
-            <p>GIHDRXLDIFKJSMLCDKFSDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
+            <p>GIHDRXLDIFKJSMLCDKFSDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+            <strong>aaaaaaaaaaaaaaaaaghjkm</strong>
+            </p>
             <button onClick={()=>props.changeColor(props.id,"red")}>Red</button>
             <button onClick={()=>props.changeColor(props.id,"yellow")}>Yellow</button>
             <button onClick={()=>props.changeColor(props.id,"blue")}>Blue</button>

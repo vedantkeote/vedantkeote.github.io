@@ -1,0 +1,14 @@
+*{
+    background-color: #5b7950;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    color: #373737;
+    font-size: 16px;
+    position: relative;
+}
+.title-text{
+    color:antiquewhite;
+}
