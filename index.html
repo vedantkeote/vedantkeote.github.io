@@ -5,19 +5,21 @@
     <title>Welcome to my personal website</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/common.css" rel="stylesheet" />
+    <link href="css/homepage.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header sticky-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="text-center title-text"><strong>VEDANT KEOTE</strong></h1>
-                </div>
+        <nav class="navbar navbar-expand-md">
+            <h1 class="text-center"><strong>VEDANT KEOTE</strong></h1>
+            <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#login-modal">
+                    <i class="fas fa-sign-in-alt"></i><h5>Login</h5>
+                </a>
             </div>
-        </div>
+        </nav>
     </div>
 </body>
 </html>
