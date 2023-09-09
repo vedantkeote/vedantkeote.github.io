@@ -9,3 +9,12 @@ body{
     font-size: 16px;
     position: relative;
 }
+#login-modal .modal-dialog {
+    width: 350px;
+    margin: auto;
+}
+
+.modal-footer {
+    background-color: #f4f4f4;
+    justify-content: center;
+}
