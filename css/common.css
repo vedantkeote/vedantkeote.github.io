@@ -1,20 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    background-color: #456639;
-    margin: 0%;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    color:antiquewhite;
+    font-family: 'Montserrat', sans-serif;;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 55px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
 }
 body{
-    font-size: 16px;
-    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(50, 95, 44);
 }
-#login-modal .modal-dialog {
-    width: 350px;
-    margin: auto;
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.main-logo{
+    font-size: 2em;
+    color:#fff;
+    user-select: none;
 }
-
-.modal-footer {
-    background-color: #f4f4f4;
-    justify-content: center;
+.main-nav a{
+    position:relative;
+    font-size: 1.1em;
+    color:#fff;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.main-nav a:after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+.main-nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.main-nav .btnLogin-popup{
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline:none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left:38px;
+    transition: .2s;
+}
+.main-nav .btnLogin-popup:hover{
+    background: #fff;
+    color: #000;
 }
