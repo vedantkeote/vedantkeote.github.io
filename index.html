@@ -6,6 +6,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/homepage.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -19,6 +20,10 @@
     </header>
     <div class="wrapper">
         <span class="material-icons icon-close">close</span>
+        <div class="Alertbox">
+            <p>The Username or Password is incorrect!</p>
+            <span class="material-icons icon-error">error</span>
+        </div>
         <div class="form-box login">
             <h3>Login</h3>
             <form action="#">
@@ -45,6 +50,7 @@
         <div class="form-box register">
             <h3>Register</h3>
             <form action="#">
+                <div class="gapclass"></div>
                 <div class="input-box">
                     <span class="material-icons md-light icon">person</span>
                     <input type="text" required><label>Username</label>
