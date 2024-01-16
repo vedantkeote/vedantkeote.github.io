@@ -71,9 +71,42 @@ a:hover{
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #141414;
+    background-color: white;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+}
+.menulinks a{
+    display:block;
+    padding:10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #141414;
+    text-decoration: none;
+    transition:all 0.3s ease-in-out;
+}
+.menulinks li{
+    list-style: none;
+}
+.menulinks.open{
+    max-height: 300px;
+}
+.burger-icon.open span:first-child{
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.burger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.burger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+.burger-icon span:first-child{
+    transform:none;
+}
+.burger-icon span:first-child{
+    opacity: 1;
+}
+.burger-icon span:first-child{
+    transform:none;
 }
