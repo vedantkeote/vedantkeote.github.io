@@ -36,7 +36,7 @@ a{
 a:hover{
     text-decoration: underline;
     text-underline-offset: 0.2rem;
-    text-decoration-color: rgb(167, 167, 167);
+    text-decoration-color: rgb(226, 226, 226);
     color: grey;
 }
 .logo{
@@ -71,7 +71,7 @@ a:hover{
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: rgb(226, 226, 226);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -109,4 +109,85 @@ a:hover{
 }
 .burger-icon span:first-child{
     transform:none;
+}
+
+section{
+    padding: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container ,#profile{
+    display: flex;
+}
+#profile{
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.sectiontext{
+    align-self: center;
+    text-align: center;
+}
+.sectiontext p{
+    font-weight: 600;
+}
+.sectiontext-p1{
+    text-align: center;
+}
+.sectiontext-p3{
+    font-size: 1.75rem;
+    margin-bottom:1rem;
+}
+.sectiontext-p2{
+    font-size: 3rem;
+    text-align: center;
+}
+.socials-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transition:all 0.3s ease;
+    padding:1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btncolor1,.btncolor2{
+    border:rgb(53, 53, 53) 0.1rem solid;
+}
+.btncolor1:hover,.btncolor2:hover{
+    cursor: pointer;
+}
+.btncolor1,.btncolor2:hover{
+    background-color: #141414;
+    color: rgb(226, 226, 226);
+}
+.btncolor1:hover{
+    background-color: #141414;
+}
+.btncolor2{
+    background-color: none;
+}
+.btncolor2:hover{
+    background-color: #141414;
+    color: rgb(226, 226, 226);
+}
+.btn-container{
+    gap:1rem;
 }
