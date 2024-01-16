@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 229, 189);
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -9,8 +10,19 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 p{
     color: #141414;
+}
+.textbackground{
+    background-color: #594020;
+    color: rgb(255, 229, 189);
 }
 a, .btn{
     transition: all 0.3s ease;
@@ -30,14 +42,15 @@ nav{
 }
 a{
     text-decoration: none;
-    text-decoration-color: rgb(226, 226, 226);
+    text-decoration-color: #141414;
     color: #141414;
 }
-a:hover{
+.navlinks a:hover{
     text-decoration: underline;
-    text-underline-offset: 0.2rem;
-    text-decoration-color: rgb(226, 226, 226);
-    color: grey;
+    transition: all 1s ease;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: #141414;
+    color: #141414;
 }
 .logo{
     font-size: 1.8rem;
@@ -121,6 +134,8 @@ section{
 .section-container ,#profile{
     display: flex;
 }
+
+
 #profile{
     justify-content: center;
     gap: 5rem;
@@ -179,7 +194,8 @@ section{
     color: rgb(226, 226, 226);
 }
 .btncolor1:hover{
-    background-color: #141414;
+    background-color: rgb(255, 229, 189);
+    color: #141414;
 }
 .btncolor2{
     background-color: none;
@@ -190,4 +206,98 @@ section{
 }
 .btn-container{
     gap:1rem;
+}
+
+#about{
+    position: relative;
+}
+.about-containers{
+    gap:2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.about-containers, .about-details-container{
+    display: flex;
+}
+.about-pic{
+    height: 400px;
+    width: 400px;
+    border-radius: 2rem;
+}
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background-color: #594020;
+    color: rgb(255, 229, 189);
+    border-radius: 2rem;
+    border:#141414 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+.details-container p{
+    background-color: #594020;
+    color: rgb(255, 229, 189);
+}
+.details-container h3,h2{
+    background-color: #594020;
+    color: rgb(255, 229, 189);
+}
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+.sectionpic-container{
+    margin: auto 0;
+}
+
+#skills{
+    position:relative;
+}
+.skills-subtitle{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+.skills-details.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-container{
+    background-color: #594020;
+    display:flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap:0.5rem;
+}
+article img{
+    background-color: #594020;
+}
+.details-container article{
+    background-color: #594020;
+    color: rgb(255, 229, 189);
+}
+.details-container span{
+    background-color: #594020;
+    color: rgb(255, 229, 189);
+}
+article .icon{
+    cursor: default;
 }
