@@ -170,6 +170,10 @@ section{
     cursor: pointer;
     height: 2rem;
 }
+.icon1{
+    cursor: pointer;
+    height: 1.5rem;
+}
 
 .btn-container{
     display: flex;
