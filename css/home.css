@@ -276,7 +276,7 @@ section{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1.8rem;
+    gap: 1.4rem;
     justify-content: space-around;
 }
 article{
@@ -298,4 +298,27 @@ article img{
 }
 article .icon{
     cursor: default;
+}
+
+#projects{
+    position: relative;
+}
+.color-container,.color-container a{
+    background-color: #594020;
+}
+.project-img{
+    border-radius: 2rem;
+    height: 90%;
+    width: 90%;
+}
+.about-containers1{
+    display: flex;
+    gap:2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.project-subtitle{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
 }
