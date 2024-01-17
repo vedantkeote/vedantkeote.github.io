@@ -239,8 +239,6 @@ section{
     background-color: #594020;
     color: rgb(255, 229, 189);
     border-radius: 2rem;
-    border:#141414 0.1rem solid;
-    border-color: rgb(163, 163, 163);
     text-align: center;
 }
 .details-container p{
@@ -278,7 +276,7 @@ section{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1.8rem;
     justify-content: space-around;
 }
 article{
