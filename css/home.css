@@ -172,9 +172,8 @@ section{
 }
 .icon1{
     cursor: pointer;
-    height: 1.5rem;
+    height: 1.2rem;
 }
-
 .btn-container{
     display: flex;
     justify-content: center;
@@ -325,4 +324,47 @@ article .icon{
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
+}
+
+#contact-me{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    background: #594020;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    width: fit-content;
+}
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+.contact-info-container p{
+    font-size: larger;
+}
+.contact-icon{
+    cursor: default;
+}
+.email-icon{
+    height: 2.5rem;
+}
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
+}
+.cp{
+    color: #323232;
 }
